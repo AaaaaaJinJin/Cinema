@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context displayName="Cinema Web Application" docBase="cinema_V1" path="/cinema_V1" reloadable="true">
+  <!--  請注意，此標籤的寫法不能用於 tomcat 5.x             -->
+  <!--                  SQLServer2005, 2008                 -->                  
+  <Resource name="jdbc/CinemaDataSQLver" type="javax.sql.DataSource"
+      username="sa" password="sa123456"
+      driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+      url="jdbc:sqlserver://127.0.0.1:1433;databaseName=cinemaDB"
+      maxActive="30"
+      maxIdle="5"
+      maxWait="5000"
+  />   
+</Context>
